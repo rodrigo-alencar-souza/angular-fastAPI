@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()">
+    <!-- Seu segundo formulário aqui -->
+    <label for="nome">Cep:</label><br>
+    <input type="text" id="cep" [(ngModel)]="cep" name="cep" required><br><br>
+    
+    <label for="cidade">Cidade:</label><br>
+    <input type="text" id="cidade" [(ngModel)]="cidade" name="cidade" required><br><br>
+
+    <label for="pais">País:</label><br>
+    <input type="text" id="pais" [(ngModel)]="pais" name="pais" required><br><br>
+    
+    <button type="submit">Finalizar</button>
+  </form>
+
+  <!-- (click)="navigateToForm1()" -->
